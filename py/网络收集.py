@@ -24,13 +24,13 @@ from urllib.parse import urlparse
 from translate import Translator  # 导入Translator类,用于文本翻译
 ## 定义txt文件的URL列表
 urls = [
-       'https://raw.githubusercontent.com/AnonymousOrz/IPTV/92ee0bf5c26dd20ac118503563d6b7fffa3f0349/Live/collect/CR_250713.txt'
-       'https://raw.githubusercontent.com/lai1tony/git_catvod/bb831377a6622e97ef32e6f8e87069bcb0c50e77/hk1box/live.txt'
-       'https://raw.githubusercontent.com/alenin-zhang/IPTV/4b9d5ab96648a439dd4a83cb2eca9fc34bf0d719/IMTV.txt'
-       'https://raw.githubusercontent.com/alenin-zhang/IPTV/4b9d5ab96648a439dd4a83cb2eca9fc34bf0d719/smt.txt'
-       'https://raw.githubusercontent.com/RaycornM/TVbox-IPTV/a9e6441470a09c75ff4406c7a5170dad514c6dfd/Tivi.txt'
-       'https://raw.githubusercontent.com/fleung49/star/65e6b3e630c621fd1922439be9dbadcb4b82b6b8/hhzt'
-       'https://raw.githubusercontent.com/RaycornM/TVbox-IPTV/a9e6441470a09c75ff4406c7a5170dad514c6dfd/Tivi.txt'   ###
+       'https://raw.githubusercontent.com/AnonymousOrz/IPTV/92ee0bf5c26dd20ac118503563d6b7fffa3f0349/Live/collect/CR_250713.txt',
+       'https://raw.githubusercontent.com/lai1tony/git_catvod/bb831377a6622e97ef32e6f8e87069bcb0c50e77/hk1box/live.txt',
+       'https://raw.githubusercontent.com/alenin-zhang/IPTV/4b9d5ab96648a439dd4a83cb2eca9fc34bf0d719/IMTV.txt',
+       'https://raw.githubusercontent.com/alenin-zhang/IPTV/4b9d5ab96648a439dd4a83cb2eca9fc34bf0d719/smt.txt',
+       'https://raw.githubusercontent.com/RaycornM/TVbox-IPTV/a9e6441470a09c75ff4406c7a5170dad514c6dfd/Tivi.txt',
+       'https://raw.githubusercontent.com/fleung49/star/65e6b3e630c621fd1922439be9dbadcb4b82b6b8/hhzt',
+       'https://raw.githubusercontent.com/RaycornM/TVbox-IPTV/a9e6441470a09c75ff4406c7a5170dad514c6dfd/Tivi.txt',   ###
        '',
        '',
        '',
@@ -323,7 +323,7 @@ excluded_keywords = ['epg', 'mitv', 'udp', 'rtp', 'P2p', 'p2p', 'p3p', 'P2P', 'P
                      'zb.qc', '/vd', '/TV2/']   #, 'CHC', '/TV2/'
 
 # 定义一个包含所有要提取的关键词的列表
-extract_keywords = ['1905', 'cctv1,', 'cctv15,', 'cctv3,', '风云音乐,', '凤凰卫视', '人间卫视', '亚洲卫视', '香港卫视', '神乐', '翡翠台', '凤凰香港', '凤凰中文', '凤凰资讯', 'AXN', 'AMC', '电影台', '大爱', '东森', 
+extract_keywords = [',', 'cctv1,', 'cctv15,', 'cctv3,', '风云音乐,', '凤凰卫视', '人间卫视', '亚洲卫视', '香港卫视', '神乐', '翡翠台', '凤凰香港', '凤凰中文', '凤凰资讯', 'AXN', 'AMC', '电影台', '大爱', '东森', 
                     '华视', '中天', '天良', '美亚', '星影', '纬来', '天映', '无线', '华剧台', '华丽台', '剧台', '三立', '八大', '采昌', '民视', '数位', '影视2', 
                     '影视3', '中视', '豬哥亮', 'TVB', '公视', '寰宇', '戏剧', '靖天', '靖洋', '龙华', '龙祥', '猪哥亮', '影迷', '影剧', '电视剧', 
                     '中华小当家', '中天娱乐', '公视戏剧', '珍珠台', '台视', '华视', '环球电视', '美亚C+', 'AMC', 'AXN', 'Asia', 'CNA', 'HBO', 'HITS', 
