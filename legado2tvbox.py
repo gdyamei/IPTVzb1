@@ -114,7 +114,7 @@ def main():
         # 获取北京时间（UTC+8）并格式化为 年-月-日-时:分秒
     from datetime import datetime, timezone, timedelta
     tz_bj = timezone(timedelta(hours=8))
-    current_time_group = datetime.now(tz_bj).strftime("%Y-%m-%d %H:%M")
+    current_time_group = datetime.now(tz_bj).strftime("%Y-%m-%d-%H:%M:%S")
     # 获取当前时间并格式化为 年-月-日-时:分秒
     #current_time_group = datetime.now().strftime("%Y-%m-%d-%H:%M:%S")
 
