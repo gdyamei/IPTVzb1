@@ -111,8 +111,12 @@ def main():
             # 同名频道归类合并多线路，用 # 分隔
             unique_channels.setdefault(title, []).append(addr)
 
+        # 获取北京时间（UTC+8）并格式化为 年-月-日-时:分秒
+    from datetime import datetime, timezone, timedelta
+    tz_bj = timezone(timedelta(hours=8))
+    current_time_group = datetime.now(tz_bj).strftime("%Y-%m-%d %H:%M")
     # 获取当前时间并格式化为 年-月-日-时:分秒
-    current_time_group = datetime.now().strftime("%Y-%m-%d-%H:%M:%S")
+    #current_time_group = datetime.now().strftime("%Y-%m-%d-%H:%M:%S")
 
     # 3. 输出 txt 格式: 全部归入当前时间分组
     txt_lines = []
