@@ -21,7 +21,7 @@ jobs:
           python-version: '3.11'
 
       - name: Generate live source
-        run:  python legado2tvbox.py
+        run:  python 更新HLive.py
 
       - name: Commit and push
         run: |
